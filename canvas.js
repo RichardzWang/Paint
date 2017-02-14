@@ -1,4 +1,4 @@
-var button = document.getElementById("button"); 
+var button = document.getElementById("b"); 
 var c = document.getElementById("canvas");
 
 var getrekt = function(e){
