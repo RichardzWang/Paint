@@ -9,12 +9,28 @@ var getrekt = function(e){
     ctx.fillRect(x - 75/2,y - 100,75,100);
 };
 
-c.addEventListener("click", getrekt);
+// c.addEventListener("click", getrekt);
 
 button.addEventListener("click", function(){
-	var ctx = c.getContext('2d');
-	ctx.clearRect(0,0,c.clientWidth,c.clientHeight);	
+    var ctx = c.getContext('2d');
+    ctx.clearRect(0,0,c.clientWidth,c.clientHeight);	
 });
 
+var dots = function(e){
+    console.log("!!!!!!!!!!");
+    var x = e.clientX;
+    var y = e.clientY;
+    var ctx = c.getContext('2d');
+    ctx.fillStyle = "#FF0000";
+    ctx.arc(x,y,20,0,2*Math.PI);
+    ctx.fill();
+    ctx.beginPath();
+    moveTo(x,y);
+    ctx.lineTo(x,y);
+    ctx.stroke();
+    ctx.fill();
+};
 
+
+c.addEventListener("click", dots);
 
