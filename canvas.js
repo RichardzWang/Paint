@@ -6,7 +6,7 @@ var getrekt = function(e){
     var y = e.clientY;
     var ctx = c.getContext('2d');
     ctx.fillStyle = "#FF0000";
-    ctx.fillRect(x,y,75,100);
+    ctx.fillRect(x - 75/2,y - 100,75,100);
 };
 
 c.addEventListener("click", getrekt);
