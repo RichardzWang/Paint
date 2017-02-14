@@ -24,11 +24,11 @@ var dots = function(e){
     ctx.fillStyle = "#FF0000";
     ctx.arc(x,y,20,0,2*Math.PI);
     ctx.fill();
-    ctx.beginPath();
-    moveTo(x,y);
+    //ctx.beginPath();
+    ctx.moveTo(x,y);
     ctx.lineTo(x,y);
     ctx.stroke();
-    ctx.fill();
+    //ctx.fill();
 };
 
 
