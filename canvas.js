@@ -17,18 +17,17 @@ button.addEventListener("click", function(){
 });
 
 var dots = function(e){
-    console.log("!!!!!!!!!!");
-    var x = e.clientX;
-    var y = e.clientY;
+//    console.log("!!!!!!!!!!");
+    var x = e.clientX-10;
+    var y = e.clientY-80;
     var ctx = c.getContext('2d');
+    ctx.lineTo(x,y);
+    ctx.stroke();
+    ctx.beginPath();
     ctx.fillStyle = "#FF0000";
     ctx.arc(x,y,20,0,2*Math.PI);
     ctx.fill();
-    //ctx.beginPath();
-    ctx.moveTo(x,y);
-    ctx.lineTo(x,y);
     ctx.stroke();
-    //ctx.fill();
 };
 
 
