@@ -13,6 +13,7 @@ var getrekt = function(e){
 
 button.addEventListener("click", function(){
     var ctx = c.getContext('2d');
+    ctx.beginPath();
     ctx.clearRect(0,0,c.clientWidth,c.clientHeight);	
 });
 
