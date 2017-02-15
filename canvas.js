@@ -27,6 +27,7 @@ var dots = function(e){
     ctx.fillStyle = "#FF0000";
     ctx.arc(x,y,20,0,2*Math.PI);
     ctx.fill();
+    ctx.moveTo(x,y);
     ctx.stroke();
 };
 
